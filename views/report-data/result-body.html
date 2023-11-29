@@ -1,0 +1,20 @@
+<tr ng-repeat="row in model.resultData">
+    <td class="vertical-center" ng-repeat="col in row" rowspan="{{col.span}}">
+        <span ng-if="col.details" ng-click="getDataValueExplanation(col)" title="{{'click_here_for_details'| translate}}" class="link-text">
+            {{col.val}}
+        </span>
+        <span ng-if="!col.details && !col.info">
+            {{col.val}}
+        </span>
+        <span ng-if="col.info" ng-click="getIndicatorDictionary(col.info)">
+            {{col.val}}
+            <i class="fa fa-info-circle info-icon cursor-pointer hideInPrint" aria-hidden="true" title="{{'indicator_dictionary'| translate}}"></i>
+        </span>
+        <span ng-if="model.sdgView && col.info" ng-click="getRFInformation(col.info)">
+            <i class="fa fa-database info-icon cursor-pointer hideInPrint" aria-hidden="true" title="{{'ndp_source'| translate}}"></i>
+        </span>
+        <span ng-if="col.vision2040">
+            {{col.vision2040}}
+        </span>
+    </td>
+</tr>

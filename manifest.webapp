@@ -1,0 +1,20 @@
+{
+    "version": "0.1",
+    "name": "Activity Planning Tool",
+    "description": "Activity Planning Tool",
+    "launch_path": "index.html",
+    "icons": {
+        "16": "/images/icons/activity-planning.png",
+        "48": "/images/icons/activity-planning.png",
+        "128": "/images/icons/activity-planning.png"
+    },
+    "developer": {
+        "name": "Etsegenet"
+    },
+    "default_locale": "en",
+    "activities": {
+        "dhis": {
+            "href": ".."
+        }
+    }
+}

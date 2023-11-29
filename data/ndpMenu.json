@@ -1,0 +1,256 @@
+[
+  {
+    "id": "NDP",
+    "domain": "NDP",
+    "displayName": "ndp_results",
+    "order": 1,
+    "hasChildren": true,
+    "show": true,
+    "color": "ndp_menu",
+    "children": [
+      {
+        "id": "HGH",
+        "order": 1,
+        "displayName": "high_level",
+        "show": true,
+        "domain": "HGH",
+        "hasChildren": true,
+        "children": [
+          {
+            "id": "VSN",
+            "domain": "VSN",
+            "code": "vision2040",
+            "order": 2,
+            "displayName": "vision_2040_targets",
+            "children": [],
+            "view": "components/vision/vision-status.html",
+            "color": "ndp-menu"
+          },
+          {
+            "id": "GOL",
+            "domain": "NOUT",
+            "code": "goal",
+            "order": 3,
+            "displayName": "goal_impact",
+            "children": [],
+            "view": "components/goal/goal-status.html",
+            "color": "ndp-menu"
+          },
+          {
+            "id": "OBJ",
+            "domain": "NOUT",
+            "code": "resultsFrameworkObjective",
+            "order": 4,
+            "displayName": "objective_outcomes",
+            "children": [],
+            "view": "components/objective/objective-status.html",
+            "color": "ndp-menu"
+          },
+          {
+            "id": "PRG",
+            "domain": "PRGO",
+            "code": "objective",
+            "order": 5,
+            "displayName": "outcome_level",
+            "children": [],
+            "view": "components/outcome/outcome-status.html",
+            "color": "ndp-menu"
+          }
+        ],
+        "color": "ndp-menu"
+      },
+      {
+        "id": "SUB",
+        "order": 2,
+        "displayName": "sub_programme_results",
+        "show": true,
+        "domain": "PRG",
+        "hasChildren": true,
+        "children": [
+          {
+            "id": "SUB-OUTCOME",
+            "domain": "SUB-OUTCOME",
+            "code": "sub-programme",
+            "order": 1,
+            "displayName": "intermediate_outcomes",
+            "children": [],
+            "view": "components/intermediate-outcome/intermdiate-outcome-status.html",
+            "color": "ndp-menu"
+          },
+          {
+            "id": "SUB-OUTPUT",
+            "domain": "OUTPUT",
+            "code": "sub-intervention",
+            "order": 2,
+            "displayName": "output_level",
+            "show": true,
+            "view": "components/output/output-status.html",
+            "children": [],
+            "color": "ndp-menu"
+          },
+          {
+            "id": "ACT",
+            "domain": "ACT",
+            "code": "sub-intervention4action",
+            "order": 4,
+            "displayName": "action_level",
+            "show": true,
+            "view": "components/action/action-output-status.html",
+            "children": [],
+            "color": "ndp-menu"
+          }
+        ],
+        "color": "ndp-menu"
+      },
+      {
+        "id": "PJ",
+        "order": 3,
+        "displayName": "project_tracker",
+        "show": true,
+        "domain": "PJ",
+        "hasChildren": true,
+        "children": [
+          {
+            "id": "PRJP",
+            "domain": "PRJP",
+            "code": "project",
+            "displayName": "project_performance",
+            "order": 1,
+            "children": [],
+            "view": "components/project/performance.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "SPACE",
+    "displayName": "space",
+    "order": 2,
+    "children": []
+  },
+  {
+    "id": "IL",
+    "domain": "IL",
+    "order": 3,
+    "displayName": "institutional_results",
+    "hasChildren": true,
+    "show": true,
+    "color": "il-menu",
+    "children": [
+      {
+        "id": "MDA",
+        "domain": "MDA",
+        "code": "MDA",
+        "displayName": "mdas",
+        "order": 1,
+        "children": [],
+        "view": "components/mda/mda-status.html",
+        "color": "il-menu"
+      },
+      {
+        "id": "LOG",
+        "domain": "LOG",
+        "code": "LOG",
+        "displayName": "lgs",
+        "order": 2,
+        "children": [],
+        "view": "components/log/log-status.html",
+        "color": "il-menu"
+      },
+      {
+        "id": "LLG",
+        "domain": "LLG",
+        "code": "LLG",
+        "displayName": "llgs",
+        "order": 3,
+        "color": "il-menu",
+        "children": [],
+        "view": "components/llg/llg-status.html"
+      }
+    ]
+  },
+  {
+    "id": "SPACE",
+    "displayName": "space",
+    "order": 4,
+    "children": []
+  },
+  {
+    "id": "SDG",
+    "domain": "SDG",
+    "code": "sdgGoals",
+    "displayName": "sdg_results",
+    "order": 7,
+    "children": [],
+    "view": "components/sdg/sdg-status.html",
+    "color": "sdg-menu"
+  },
+  {
+    "id": "SPACE",
+    "displayName": "space",
+    "order": 8,
+    "children": []
+  },
+  {
+    "id": "DG",
+    "domain": "DG",
+    "code": "dataGovernance",
+    "displayName": "data_governance",
+    "order": 9,
+    "show": true,
+    "color": "dg-menu",
+    "children": [
+      {
+        "id": "DG-DICT",
+        "domain": "DICT",
+        "code": "DICT",
+        "displayName": "indicator_dictionary",
+        "view": "components/dictionary/dictionary-status.html",
+        "color": "dg-menu"
+      },
+      {
+        "id": "DG-COMP",
+        "domain": "COMP",
+        "code": "COMP",
+        "displayName": "data_completeness",
+        "view": "components/completeness/completeness.html",
+        "color": "dg-menu"
+      },
+      {
+        "id": "DG-WFG",
+        "domain": "WFG",
+        "code": "WFG",
+        "displayName": "workflow_guidelines",
+        "hasNoNDP": true,
+        "view": "views/workflow-guideline.html"
+      },
+      {
+        "id": "DG-FAQ",
+        "domain": "FAQ",
+        "code": "FAQ",
+        "displayName": "faqs",
+        "view": "views/faq.html",
+        "hasNoNDP": true,
+        "color": "dg-menu"
+      }
+    ]
+  },
+  {
+    "id": "SPACE",
+    "displayName": "space",
+    "order": 10,
+    "children": []
+  },
+  {
+    "id": "LIB",
+    "domain": "LIB",
+    "code": "LIB",
+    "displayName": "document_library",
+    "order": 11,
+    "children": [],
+    "view": "components/library/library-status.html",
+    "hasNoNDP": true,
+    "color": "lib-menu"
+  }
+]
